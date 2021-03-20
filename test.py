@@ -67,4 +67,5 @@ if __name__ == '__main__':
     args.add_argument('-l', '--log', default='None', type=str,
                     help='log name')
     config = ConfigParser.from_args(args)
+    print(config['test_data_loader']['args']['data_dir'])
     main(config)
